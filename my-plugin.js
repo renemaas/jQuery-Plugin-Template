@@ -1,7 +1,27 @@
-(function ($, window, document, undefined) {
+/*!
+ * PluginName
+ * @version 1.0
+ * @author Your Name <www.yourdomain.tld>
+ * @copyright Year Your Name
+ * @license MIT License
+ */
+(function ($) {
 
-	var pluginName = function (elements, options) {
+	var pluginName = function (elem, options) {
+		// combined settings (default + call)
 		var settings = $.extend({}, jQuery.fn.pluginName.defaults, options);
+		// element(s) from call
+		var $elem = $(elem);
+
+		// PLACE PLUGIN LOGIC HERE
+
+		// EXTERNAL FUNCTIONS
+		var externalFunctions = {
+			test: function () {
+				alert(true);
+			}
+		};
+		$elem.data('pluginName', externalFunctions);
 	};
 
 	$.fn.pluginName = function (options) {
@@ -10,8 +30,8 @@
 		});
 	};
 
-	jQuery.pluginName.defaults = {
-		optionName: defaultValue
+	$.fn.pluginName.defaults = {
+		option: 'value'
 	};
 
-})(jQuery, window, document);
+})(jQuery);
