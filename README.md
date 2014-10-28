@@ -5,7 +5,7 @@ Simple wrapper for complex jQuery plugins.
 
 ## Usage
 
-Replace *pluginName* with the name of your plugin.
+Replace `pluginName` with the name of your plugin.
 
 **You can call it via:**
 
