@@ -1,4 +1,4 @@
-jQuery-plugin-template
+jQuery Plugin Template
 ======================
 
 Simple wrapper for complex jQuery plugins.
